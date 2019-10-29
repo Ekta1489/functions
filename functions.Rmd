@@ -115,8 +115,8 @@ sim_regression = function(n, beta0 = 2, beta1 = 3) {
   ls_fit = lm(y ~ x, data = sim_data)
   
   tibble(
-    beta0_hat = coef(ls_fit)[1],
-    beta1_hat = coef(ls_fit)[2]
+    beta0_hat = coef(ls_fit)[1], 
+    beta1_hat = coef(ls_fit)[2] 
   )
   
 }
